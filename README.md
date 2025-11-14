@@ -18,7 +18,7 @@
 
 使用：
 
-python video_checker.py /path/to/videos
+python media_checker.py /path/to/videos
 
 参数说明：
 
@@ -34,7 +34,7 @@ python video_checker.py /path/to/videos
 
 示例：
 
-python video_checker.py /mnt/videos --output server_check --resume
+python media_checker.py /mnt/videos --output server_check --resume
 
 
 
