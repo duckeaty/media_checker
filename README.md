@@ -2,6 +2,8 @@
 
 支持中断后继续检测，不用从头开始。
 
+支持格式：.mp4, .avi, .mov, .mkv, .flv, .wmv, .webm, .m4v, .mpeg, .mpg, .3gp, .ts, .mts, .m2ts, .vob, .ogv, .drc, .mxf, .rmvb, .swf, .divx
+
 
 
 
@@ -22,7 +24,7 @@ python media_checker.py /path/to/videos
 
 参数说明：
 
-/path/to/videos：要检测的视频目录
+/path/to/videos：要检测的视频根目录
 
 检测结果会保存在当前目录的crashed_YYYYMMDD-HHMMSS.txt文件中
 
