@@ -22,7 +22,7 @@ python media_checker.py /path/to/videos
 
 参数说明：
 
-/path/to/videos：要检测的视频目录（支持10万+文件）
+/path/to/videos：要检测的视频目录
 
 检测结果会保存在当前目录的crashed_YYYYMMDD-HHMMSS.txt文件中
 
