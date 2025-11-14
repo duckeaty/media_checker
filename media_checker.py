@@ -105,7 +105,7 @@ def load_progress(progress_file):
     return processed_files
 
 def main():
-    parser = argparse.ArgumentParser(description='专业视频检测工具')
+    parser = argparse.ArgumentParser(description='视频批量检测工具')
     parser.add_argument('directory', type=str, help='要检查的目录路径')
     parser.add_argument('--output', type=str, default='video_report', help='输出文件前缀')
     parser.add_argument('--resume', action='store_true', help='从上次中断处继续')
@@ -167,3 +167,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
