@@ -22,22 +22,6 @@ def get_video_files(directory):
                 video_files.append(os.path.join(root, file))
     return video_files
 
-def create_test_video(filepath, duration=1, width=320, height=240, fps=30):
-    """创建有效的测试视频文件"""
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    out = cv2.VideoWriter(filepath, fourcc, fps, (width, height))
-    
-    for _ in range(duration * fps):
-        frame = np.random.randint(0, 256, (height, width, 3), dtype=np.uint8)
-        out.write(frame)
-    
-    out.release()
-
-def create_corrupted_video(filepath):
-    """创建损坏的测试视频文件"""
-    with open(filepath, 'wb') as f:
-        f.write(b'CORRUPTED_VIDEO_DATA')
-
 def analyze_video(video_path):
     """详细视频分析并实时显示步骤"""
     error_type = 0
