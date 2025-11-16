@@ -114,7 +114,8 @@ def main():
     # 生成日志文件名
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     log_filename = f"{args.output}_{timestamp}.txt"
-    progress_file = f".{args.output}_progress_{timestamp}.txt"
+    #progress_file = f".{args.output}_progress_{timestamp}.txt"
+    progress_file = f".{args.output}_progress.txt"
     
     # 加载进度
     processed_files = load_progress(progress_file)
@@ -167,4 +168,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
